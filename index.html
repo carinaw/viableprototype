@@ -215,7 +215,7 @@
                                 <input type="text" class="form-control required" name="Name" placeholder="Your Name">
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control required" name="Email" placeholder="Your Email">
+                                <input type="email" name="replyto" class="form-control required" name="Email" placeholder="Your Email">
                             </div>
                         </div>
 
@@ -228,6 +228,7 @@
                         <div class="nk-form-response-success">Thank you! We are looking forward to reading your message and will get back to you shortly!</div>
                         <div class="nk-form-response-error">Sorry, a little problem has come up!</div>
                         <button type="submit" class="nk-btn" value="Send Message">Send Message</button>
+                        <input type="hidden" name="_subject" value="New Message!" />
 
                         <!-- <button class="nk-btn">Send Message</button> -->
                     </form>
