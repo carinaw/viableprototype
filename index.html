@@ -209,7 +209,7 @@
                 <div class="col-lg-7">
                     <div class="nk-gap-2"></div>
                     <!-- START: Form -->
-                    <form action="https://formspree.io/your@email.com" class="nk-form nk-form-ajax">
+                    <form action="https://formspree.io/your@email.com" method="post" class="nk-form nk-form-ajax">
                         <div class="row vertical-gap">
                             <div class="col-md-6">
                                 <input type="text" class="form-control required" name="Name" placeholder="Your Name">
@@ -223,11 +223,13 @@
                         <input type="text" class="form-control required" name="Company" placeholder="Your Company">
 
                         <div class="nk-gap-1"></div>
-                        <textarea class="form-control required" name="Message" rows="8" placeholder="Your Message" aria-required="true"></textarea>
+                        <textarea class="form-control required" name="message" rows="8" placeholder="Your Message" aria-required="true"></textarea>
                         <div class="nk-gap-1"></div>
                         <div class="nk-form-response-success">Thank you! We are looking forward to reading your message and will get back to you shortly!</div>
                         <div class="nk-form-response-error">Sorry, a little problem has come up!</div>
-                        <button class="nk-btn">Send Message</button>
+                        <input type="submit" class="nk-btn" _onclick="Thank you!" value="Send Message"> 
+
+                        <!-- <button class="nk-btn">Send Message</button> -->
                     </form>
                     <!-- END: Form -->
                 </div>
